@@ -44,7 +44,7 @@ import java.util.List;
  * 
  */
 @RestController
-@RequestMapping("/unicorns/basket")
+@RequestMapping("/images/basket")
 public class BasketController extends CoreController {
 
 	@Autowired
