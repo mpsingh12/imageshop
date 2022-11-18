@@ -28,7 +28,7 @@ var myApp = angular.module('unicorn_app', ['ngRoute', 'ngResource']).controller(
         console.log($scope.host);
         $.ajax({
             type: "GET",
-            url: $scope.host + "/unicorns/",
+            url: $scope.host + "/images/",
             contentType: 'application/json',
             dataType: 'json',
             success: function(response) {
@@ -268,7 +268,7 @@ var myApp = angular.module('unicorn_app', ['ngRoute', 'ngResource']).controller(
             var cuuid = $scope.user;
             $.ajax({
                 type: "POST",
-                url: $scope.host + "/unicorns/basket",
+                url: $scope.host + "/images/basket",
                 contentType: "application/json",
                 // dataType: 'json',
                 data: JSON.stringify({
@@ -322,7 +322,7 @@ var myApp = angular.module('unicorn_app', ['ngRoute', 'ngResource']).controller(
         }
         $.ajax({
             type: "GET",
-            url: $scope.host + "/unicorns/basket/" + $scope.user,
+            url: $scope.host + "/images/basket/" + $scope.user,
             success: function(response) {
 
                 $scope.$apply(function() {
@@ -358,7 +358,7 @@ var myApp = angular.module('unicorn_app', ['ngRoute', 'ngResource']).controller(
         var cuuid = $scope.user;
         $.ajax({
             type: "DELETE",
-            url: $scope.host + "/unicorns/basket",
+            url: $scope.host + "/images/basket",
             contentType: "application/json",
             // dataType: 'json',
             data: JSON.stringify({

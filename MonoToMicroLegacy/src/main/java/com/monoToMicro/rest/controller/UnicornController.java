@@ -38,7 +38,7 @@ import java.util.Collection;
  * 
  */
 @RestController
-@RequestMapping("/unicorns")
+@RequestMapping("/images")
 public class UnicornController extends CoreController {
 
 	@Autowired
