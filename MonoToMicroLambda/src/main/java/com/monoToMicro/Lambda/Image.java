@@ -22,17 +22,17 @@ import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbBean;
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbPartitionKey;
 
 @DynamoDbBean
-public class Unicorn {
+public class Image {
   private String uuid = null;
   private String name = null;
   private String description = null;
   private Double price = null;
   private String image = null;
 
-  public Unicorn() {
+  public Image() {
   }
 
-  public Unicorn(String uuid) {
+  public Image(String uuid) {
     this.uuid = uuid;
   }
 

@@ -24,14 +24,14 @@ import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbParti
 import java.util.List;
 
 @DynamoDbBean
-public class UnicornBasket {
+public class ImageBasket {
   private String uuid = null;
-  private List<Unicorn> unicorns = null;
+  private List<Image> Images = null;
 
-  public UnicornBasket() {
+  public ImageBasket() {
   }
 
-  public UnicornBasket(String uuid) {
+  public ImageBasket(String uuid) {
     this.uuid = uuid;
   }
 
@@ -44,12 +44,12 @@ public class UnicornBasket {
     this.uuid = uuid;
   }
 
-  @DynamoDbAttribute(value = "unicorns")
-  public List<Unicorn> getUnicorns() {
-    return unicorns;
+  @DynamoDbAttribute(value = "images")
+  public List<Image> getImages() {
+    return images;
   }
 
-  public void setUnicorns(List<Unicorn> unicorns) {
-    this.unicorns = unicorns;
+  public void setImages(List<Image> images) {
+    this.images = images;
   }
 }
