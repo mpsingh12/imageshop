@@ -35,7 +35,7 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 public class UnicornBasketImpl implements RequestHandler<UnicornBasket, String> {
-  private static final String UNICORN_TABLE_NAME = "unishop";
+  private static final String UNICORN_TABLE_NAME = "imageshop";
   private static final DynamoDbAsyncClient ddb = DynamoDbAsyncClient.builder()
     .credentialsProvider(EnvironmentVariableCredentialsProvider.create())
     .httpClientBuilder(AwsCrtAsyncHttpClient.builder().maxConcurrency(50))

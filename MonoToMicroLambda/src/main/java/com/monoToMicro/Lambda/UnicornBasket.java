@@ -44,7 +44,7 @@ public class UnicornBasket {
     this.uuid = uuid;
   }
 
-  @DynamoDbAttribute(value = "unicorns")
+  @DynamoDbAttribute(value = "images")
   public List<Unicorn> getUnicorns() {
     return unicorns;
   }
